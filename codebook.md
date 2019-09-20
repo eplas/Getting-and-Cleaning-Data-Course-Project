@@ -3,15 +3,16 @@
 
 Run_analysis.R script is the only script that turns the data from the experiments into the data set required with the following conditions:
 
+
 1. Merges the training and the test sets to create one data set.
 
-2.Extracts only the measurements on the mean and standard deviation for each measurement.
+2. Extracts only the measurements on the mean and standard deviation for each measurement.
 
-3.Uses descriptive activity names to name the activities in the data set
+3. Uses descriptive activity names to name the activities in the data set
 
-4.Appropriately labels the data set with descriptive variable names.
+4. Appropriately labels the data set with descriptive variable names.
 
-5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 
 We use readr and reshape packages, for the read_delim and melt and dcast functions.
@@ -110,17 +111,17 @@ VARS:
 * fBodyBodyGyroJerkMag-meanFreq()    * settype      * activity        * subjectid 
                        
                       
-   - Variables: from 1 to 79, **numeric**,  are sensor standard deviation or mean values (-std / -mean) .
-   - Variables from 80 to 82, are **characters**
-   	* settype, which can be "train" or "test" indicating the source of the sensor data.
-   	* activity which can be WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS , SITTING , STANDING or LAYING
-   	* subjectid which is a numeric value from 1 to 30, an identifier of the subject who carried out the experiment.
+	* Variables: from 1 to 79, **numeric**,  are sensor standard deviation or mean values (-std / -mean) .
+	* Variables from 80 to 82, are **characters**
+	* settype, which can be "train" or "test" indicating the source of the sensor data.
+	* activity which can be WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS , SITTING , STANDING or LAYING
+	* subjectid which is a numeric value from 1 to 30, an identifier of the subject who carried out the experiment.
     
     
 ###  **dfcast** Data frame
     
-    - Same 1 to 79 variables from mergedf data frame but for each subjectid, ie, tBodyAcc-mean()-X\_1, which is tBodyAcc-mean()-X average for subject 1, and grouped by activity in each row, row 1 to 6 is avarage for activity walking, walking_upstairs, walking\_downstairs, sitting, standing and laying.
-    - Total 2371 columns and 6 rows.
+	* Same 1 to 79 variables from mergedf data frame but for each subjectid, ie, tBodyAcc-mean()-X\_1, which is tBodyAcc-mean()-X average for subject 1, and grouped by activity in each row, row 1 to 6 is avarage for activity walking, walking_upstairs, walking\_downstairs, sitting, standing and laying.
+	* Total 2371 columns and 6 rows.
     
     This data frame is exported in CSV format to **final.csv**
     
