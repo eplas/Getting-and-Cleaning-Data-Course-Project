@@ -10,7 +10,7 @@ This is a R script called **run_analysis.R** that does the following:
 
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
- Data Result is exported to file **"final.csv"**
+ Data Result is exported to file **"final.txt"**
  
  Codebook.md and inside the script are explanations of each of the steps taken to get to the final result.
  

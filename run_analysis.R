@@ -114,5 +114,5 @@ dfcast <- dcast(dfmelt, activity ~ variable + subjectid, mean )
 
 View(dfcast)
 
-# Export data frame into file final.csv
-write_csv(dfcast,"final.csv")
+# Export data frame into file final.txt
+write.table(dfcast, "final.txt",row.names=FALSE)
