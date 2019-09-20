@@ -106,8 +106,8 @@ VARS:
 * fBodyBodyGyroJerkMag-meanFreq()    * settype      * activity        * subjectid 
                        
                       
-   - Variables: from 1 to 79, numeric,  are sensor standard deviation or mean values (-std / -mean) .
-   - Variables from 80 to 82, are character
+   - Variables: from 1 to 79, **numeric**,  are sensor standard deviation or mean values (-std / -mean) .
+   - Variables from 80 to 82, are **characters**
    	* settype, which can be "train" or "test" indicating the source of the sensor data.
    	* activity which can be WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS , SITTING , STANDING or LAYING
    	* subjectid which is a numeric value from 1 to 30, an identifier of the subject who carried out the experiment.
