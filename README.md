@@ -12,11 +12,11 @@ This is a R script called **run_analysis.R** that does the following:
 
  Data Result is exported to file **"final.csv"**
  
- Codebook.txt and inside the script are explanations of each of the steps taken to get to the final result.
+ Codebook.md and inside the script are explanations of each of the steps taken to get to the final result.
  
 ## DATA
 
-For the data available at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+Source data available at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
@@ -70,8 +70,8 @@ The following files are available for the train and test data. Their description
 
 - 'train/Inertial Signals/body\_gyro\_x\_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
-### Notes: 
-======
+Notes: 
+
 - Features are normalized and bounded within [-1,1].
 - Each feature vector is a row on the text file.
 
