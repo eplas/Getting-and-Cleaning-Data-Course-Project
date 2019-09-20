@@ -120,7 +120,7 @@ VARS:
     
 ###  **dfcast** Data frame
     
-	* Same 1 to 79 variables from mergedf data frame but for each subjectid, ie, tBodyAcc-mean()-X_1, which is tBodyAcc-mean()-X average for subject 1, and grouped by activity in each row, row 1 to 6 is avarage for activity walking, walking_upstairs, walking\_downstairs, sitting, standing and laying.
+	* Same 1 to 79 variables from mergedf data frame but for each subjectid, ie tBodyAcc-mean()-X_1, which is tBodyAcc-mean()-X average for subject 1, and grouped by activity in each row, row 1 to 6 is avarage for activity walking, walking_upstairs, walking\_downstairs, sitting, standing and laying.
 	* Total 2371 columns and 6 rows.
     
     This data frame is exported in CSV format to **final.csv**
