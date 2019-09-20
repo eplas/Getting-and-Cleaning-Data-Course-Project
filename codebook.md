@@ -25,8 +25,8 @@ For the TEST and TRAIN data we reads 561 columns / 2947 rows feature data
 then we add new column settype "test".
 We read activity codes from the y_xxx.txt and then convert activity codes into lower case label, then we add activity to data frame and read subject and add it to data frame
 
-Then we Rename new columns to "settype", "activity" and "subjectid"ubjectid")
-and  filter data sets with mean and std deviation measurements only
+Then we rename new columns to "settype", "activity" and "subjectid"
+and filter data sets with mean and std deviation measurements only
 
 Then we merge test and train data sets with the merge function
 
@@ -48,6 +48,8 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 ## DATA SETS
 
 ###  **mergedf** Data frame
+
+VARS:
 
 * tBodyAcc-mean()-X             * tBodyAcc-mean()-Y              * tBodyAcc-mean()-Z
 
@@ -111,9 +113,10 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
    	* subjectid which is a numeric value from 1 to 30, an identifier of the subject who carried out the experiment.
     
     
-    ###  **dfcast** Data frame
+###  **dfcast** Data frame
     
     - Same 1 to 79 variables from mergedf data frame but for each subjectid, ie, tBodyAcc-mean()-X\_1, which is tBodyAcc-mean()-X average for subject 1, and grouped by activity in each row, row 1 to 6 is avarage for activity walking, walking_upstairs, walking\_downstairs, sitting, standing and laying.
     - Total 2371 columns and 6 rows.
     
+    This data frame is exported in CSV format to **final.csv**
     
